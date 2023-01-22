@@ -1,0 +1,11 @@
+:root {
+  /* background */
+  --bg-main: rgb(40, 40, 40);
+  --bg-sub: rgb(52, 52, 52);
+  --bg-alt: rgb(30, 30, 30);
+  /* matte pallet */
+  --p01: #293556;
+  --p02: #2e4583;
+  --p03: #3e60c1;
+  --p04: #5983fc;
+}
