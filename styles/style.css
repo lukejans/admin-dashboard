@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+
   /*! remove at the end */
   border: 0.5px solid red;
 }
@@ -20,15 +22,79 @@
   --p04: #5983fc;
   /* fallback font */
   --fbf: monospace, sans-serif;
+  /* font color */
+  --fc: rgb(227, 215, 215);
 }
 /* set fonts */
 * {
   font-family: 'Fira Code', var(--fbf);
+  font-size: 0.9rem;
+  color: var(--fc);
 }
 h1 {
   font-family: 'Unbounded', var(--fbf);
+  font-size: 1.15rem;
 }
 /*! temporarily set image widths */
 img {
   width: 50px;
+  display: block;
+}
+/* set main container layout */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr 5fr;
+}
+.search {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.sidebar {
+  grid-area: 1 / 1 / 3 / 2;
+}
+.dashboard {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+/* SEARCH */
+/* container */
+.search {
+  height: 150px;
+  background-color: var(--bg-main);
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 5fr 3fr;
+}
+/* grid items */
+.search-bar {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.notify {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.welcome {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.actions {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background-color: var(--bg-alt);
+}
+
+/* DASHBOARD */
+/* container */
+.dashboard {
+  background-color: var(--bg-sub);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 7fr 3fr;
+}
+/* grid items */
+.projects {
+  grid-area: 1 / 1 / 3 / 2;
 }
