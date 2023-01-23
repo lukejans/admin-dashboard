@@ -1,3 +1,13 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*! remove at the end */
+  border: 0.5px solid red;
+}
+
+/* SETUP */
 :root {
   /* background */
   --bg-main: rgb(40, 40, 40);
@@ -8,4 +18,17 @@
   --p02: #2e4583;
   --p03: #3e60c1;
   --p04: #5983fc;
+  /* fallback font */
+  --fbf: monospace, sans-serif;
+}
+/* set fonts */
+* {
+  font-family: 'Fira Code', var(--fbf);
+}
+h1 {
+  font-family: 'Unbounded', var(--fbf);
+}
+/*! temporarily set image widths */
+img {
+  width: 50px;
 }
