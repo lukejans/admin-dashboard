@@ -19,14 +19,120 @@
   </head>
   <body>
     <div class="container">
-      <header class="welcome"></header>
-      <aside class="sidebar">
+      <!-- top searchbar / welcome -->
+      <section class="search">
+        <form class="search-bar" action="#" method="get">
+          <label for="search-field" hidden>Search</label>
+          <input
+            type="search"
+            id="search-field"
+            name="q"
+            aria-label="Search Bar" />
+          <button type="submit" value="Search" aria-label="Search Button">
+            <img
+              src="./images/svg/search.svg"
+              alt="Search Icon"
+              aria-hidden="true" />
+          </button>
+        </form>
+        <section class="notify">
+          <img src="./images/svg/bell.svg" alt="Notifications" />
+          <img src="./images/wassie1.png" alt="Profile Picture" />
+          <p>Luke Janssen</p>
+        </section>
+        <section class="welcome">
+          <img src="./images/wassie1.png" alt="profile picture" />
+          <header class="intro">
+            <p>Hi there,</p>
+            <h1>Luke Janssen (u/lukejans)</h1>
+          </header>
+        </section>
+        <section class="actions">
+          <button>new</button>
+          <button>upload</button>
+          <button>share</button>
+        </section>
+      </section>
+      <!-- side nav bar -->
+      <nav class="sidebar">
         <!-- use ::before pseudo element to display svg -->
         <header class="s-title">
           <h1>dashboard</h1>
         </header>
-      </aside>
-      <main class="dashboard"></main>
+        <ul class="s-tabs">
+          <li>home</li>
+          <li>profile</li>
+          <li>messages</li>
+          <li>history</li>
+          <li>tasks</li>
+          <li>communities</li>
+          <li>settings</li>
+          <li>support</li>
+          <li>privacy</li>
+        </ul>
+      </nav>
+      <!-- main content section -->
+      <main class="dashboard">
+        <section class="projects">
+          <header>
+            <h1>Your Projects</h1>
+          </header>
+          <section class="projects-content">
+            <div>p1</div>
+            <div>p2</div>
+            <div>p3</div>
+            <div>p4</div>
+            <div>p5</div>
+            <div>p6</div>
+          </section>
+        </section>
+
+        <section class="announcements">
+          <header>
+            <h1>Announcements</h1>
+          </header>
+          <section class="announce-content">
+            <p>
+              <strong>Site Maintenance</strong><br />Lorem Ipsum is simply dummy
+              text of the printing and typesetting industry.
+            </p>
+            <p>
+              <strong>Special Event</strong><br />The standard chunk of Lorem
+              Ipsum used since the 1500s.
+            </p>
+            <p>
+              <strong>Updated Privacy Policy</strong><br />The point of using
+              Lorem Ipsum is for normal distribution of letters.
+            </p>
+          </section>
+        </section>
+
+        <section class="trending">
+          <header>
+            <h1>Trending</h1>
+          </header>
+          <section class="trend-content">
+            <div>
+              <img src="./images/wassie2.png" aria-hidden="true" />
+              <p><strong>u/ tylerJ</strong><br />JavaScript Ninja</p>
+            </div>
+            <div>
+              <img src="./images/wassie3.png" aria-hidden="true" />
+              <p><strong>u/ ozzyTrux</strong><br />ChatGPT API</p>
+            </div>
+
+            <div>
+              <img src="./images/wassie4.png" aria-hidden="true" />
+              <p><strong>u/ bertisRob</strong><br />Web Scraping</p>
+            </div>
+
+            <div>
+              <img src="./images/wassie5.png" aria-hidden="true" />
+              <p><strong>u/ mangoF</strong><br />Stable Diffusion</p>
+            </div>
+          </section>
+        </section>
+      </main>
     </div>
   </body>
 </html>
